@@ -5,18 +5,17 @@
   <title>laravel課題1</title>
 </head>
 <body>
-  <form action="login" method="get">
-    <button>ログイン画面へ移動</button>
+  <a href="/login">ログイン</a>
+  <a href="/register">新規登録</a><br>
+  <form>
+    <h2>新規登録画面</h2>
+    <fildset>
+      <input type="text" placeholder="Name"><br>
+      <input type="text" placeholder="E-Mail Address"><br>
+      <input type="password" placeholder="Password"><br>
+      <input type="password" placeholder="Confirm Password"><br>
+    </fildset>
+    <input type="submit" value="登録">
   </form>
-  <form action="register" method="get">
-    <button>登録画面へ移動</button><br>
-  </form>
-
-  <h2>登録画面</h2>
-  Name<input type="text"><br>
-  E-Mail Address<input type="text"><br>
-  Password<input type="text"><br>
-  Confirm Passwprd<input type="text"><br>
-  <input type="submit" value="登録">
 </body>
 </html>
