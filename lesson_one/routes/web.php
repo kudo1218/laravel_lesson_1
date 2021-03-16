@@ -1,7 +1,7 @@
 <?php
 
-Route::resource('/shops','resource_Controller');
+Route::get('/', 'LoginController@index');
 
-Route::get('/', 'MainController@index');
+Route::get('/user', 'LoginController@index');
 
-Route::get('/login', 'MainController@index');
+Route::get('/register', 'RegisterController@index');

@@ -1,12 +1,8 @@
 @extends('layout.layout')
 
-@section('title','ログインページ')
-
-@section('menu')
+@section('form')
+  <h2>ログインページ</h2>
   <input type="text" placeholder="E-Mail Address"><br>
   <input type="password" placeholder="Password"><br>
-@endsection
-
-@section('submit')
   <input type="submit" value="ログイン">
 @endsection
