@@ -1,7 +1,7 @@
 <?php
 
-Route::get('/', 'LoginController@index');
+Route::get('/user', 'MainController@index');
 
-Route::get('/user', 'LoginController@index');
+Route::get('/register', 'MainController@create');
 
-Route::get('/register', 'RegisterController@index');
+Route::get('/home', 'MainController@home');

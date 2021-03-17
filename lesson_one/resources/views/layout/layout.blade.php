@@ -6,7 +6,7 @@
 </head>
 <body>
   <a href="/user">ログイン</a>
-  <a href="/register">新規登録</a><br>
+  <a href="/register">新規登録</a>
   @yield('form')
 </body>
 </html>
