@@ -12,17 +12,17 @@ class MainController extends Controller
   public function create() {
     return view('register');
   }
-  public function home(Request $request) {
+  public function store(Request $request) {
     $data = ['name'=>$request->name];
 
     $validate_rule = [
       'name' => 'required',
       'mail' => 'required',
-      'password' => 'required|confirmed',
+      'password' => 'required|confirmed|min:7',
       'password_confirmation' => 'required',
     ];
 
     $this->validate($request, $validate_rule);
-    return view('home',$data);
+    return view('store',$data);
   }
 }

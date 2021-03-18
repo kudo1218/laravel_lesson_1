@@ -2,7 +2,7 @@
 
 @section('form')
   <h2>新規登録ページ</h2>
-  <form action="/home" method="get">
+  <form action="/user" method="get">
     <input type="text" name="name" placeholder="Name"><br>
     <input type="text" name="mail" placeholder="Mail Address"><br>
     <input type="password" name="password" placeholder="Password"><br>

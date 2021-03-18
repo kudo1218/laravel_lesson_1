@@ -2,6 +2,6 @@
 
 Route::get('/user', 'MainController@index');
 
-Route::get('/register', 'MainController@create');
+Route::get('/user/register', 'MainController@create');
 
-Route::get('/home', 'MainController@home');
+Route::post('/user', 'MainController@store');
