@@ -24,9 +24,9 @@ class mainRequest extends FormRequest{
       'name.required' => '名前を入力して下さい。',
       'mail.required' => 'メールアドレスを入力して下さい。',
       'password.required' => 'パスワードを入力して下さい。',
-      'password_confirm.required' => 'パスワードの再入力をして下さい。',
+      'password_confirmation.required' => 'パスワードの再入力をして下さい。',
       'password.confirmed' => 'パスワードは同じものを入力して下さい。',
-      'password.min:7' => 'パスワードは7文字以上で入力して下さい。',
+      'password.min' => 'パスワードは7文字以上で入力して下さい。',
     ];
   }
 }
