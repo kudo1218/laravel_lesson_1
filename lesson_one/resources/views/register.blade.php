@@ -11,7 +11,3 @@
     <input type="submit" value="登録">
   </form>
 @endsection
-
-@error('name')
-  $message
-@enderror

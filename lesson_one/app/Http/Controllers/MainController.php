@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\mainRequest;
 
 class MainController extends Controller
 {
@@ -12,17 +13,9 @@ class MainController extends Controller
   public function create() {
     return view('register');
   }
-  public function store(Request $request) {
+  public function store(mainRequest $request) {
     $data = ['name'=>$request->name];
-
-    $validate_rule = [
-      'name' => 'required',
-      'mail' => 'required',
-      'password' => 'required|confirmed|min:7',
-      'password_confirmation' => 'required',
-    ];
-
-    $this->validate($request, $validate_rule);
-    return view('store',$data);
+    $validated = $request->validated();
+    return view('store',$data)->with($validated);
   }
 }
