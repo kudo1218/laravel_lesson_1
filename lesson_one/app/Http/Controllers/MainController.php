@@ -15,7 +15,6 @@ class MainController extends Controller
   }
   public function store(mainRequest $request) {
     $data = ['name'=>$request->name];
-    $validated = $request->validated();
-    return view('store',compact('data'))->with($validated);
+    return view('store',compact('data'));
   }
 }
