@@ -14,7 +14,7 @@ class MainController extends Controller
     return view('register');
   }
   public function store(mainRequest $request) {
-    $data = ['name'=>$request->name];
-    return view('store',compact('data'));
+    $name = $request->name;
+    return view('store',compact('name'));
   }
 }
