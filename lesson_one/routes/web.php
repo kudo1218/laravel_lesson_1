@@ -1,7 +1,10 @@
 <?php
 
-Route::get('/', 'LoginController@index');
+//ログイン画面
+Route::get('/user', 'MainController@index');
 
-Route::get('/user', 'LoginController@index');
+//新規登録画面
+Route::get('/user/create', 'MainController@create');
 
-Route::get('/register', 'RegisterController@index');
+//新規登録後に遷移する画面
+Route::post('/user', 'MainController@store');
